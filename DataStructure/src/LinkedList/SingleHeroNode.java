@@ -1,6 +1,8 @@
-package singlelinklist;
-
-public class HeroNode {
+package LinkedList;
+/*
+    单向链表实体类
+ */
+public class SingleHeroNode {
     //人物的编号
     private int no;
     //人物的名字
@@ -8,12 +10,12 @@ public class HeroNode {
     //人物的昵称
     private  String nickName;
     //下一个节点
-    private HeroNode next;
+    private SingleHeroNode next;
 
-    public HeroNode() {
+    public SingleHeroNode() {
     }
 
-    public HeroNode(int no, String name, String nickName) {
+    public SingleHeroNode(int no, String name, String nickName) {
         this.no = no;
         this.name = name;
         this.nickName = nickName;
@@ -43,11 +45,11 @@ public class HeroNode {
         this.nickName = nickName;
     }
 
-    public HeroNode getNext() {
+    public SingleHeroNode getNext() {
         return next;
     }
 
-    public void setNext(HeroNode next) {
+    public void setNext(SingleHeroNode next) {
         this.next = next;
     }
 
@@ -59,4 +61,5 @@ public class HeroNode {
                 ", nickName='" + nickName + '\'' +
                 '}';
     }
+
 }
