@@ -35,5 +35,8 @@ public class SingleListDemo {
 //        singleList.showSingleList();
         System.out.println("------------------------------------");
         singleList.reverseListByStack();
+        System.out.println("------------------------------------");
+        singleList.remove(singleList.getListHead(),4);
+        singleList.showSingleList();
     }
 }

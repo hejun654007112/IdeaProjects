@@ -14,6 +14,9 @@ public class HeroNodeSingleList {
         listHead = new SingleHeroNode(0, "", "");
     }
 
+    public SingleHeroNode getListHead() {
+        return listHead;
+    }
 
     //遍历单链表
     public void showSingleList() {
@@ -169,6 +172,13 @@ public class HeroNodeSingleList {
         while (stack.size() > 0){
             System.out.println(stack.pop());
         }
-
+    }
+    //使用递归删除制定编号元素
+    public SingleHeroNode remove(SingleHeroNode head,int val){
+        if (head==null){
+            return head;
+        }
+        head.setNext(remove(head.getNext(),val));
+        return head.getNo() == val?head.getNext():head;
     }
 }
